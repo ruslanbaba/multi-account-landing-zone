@@ -1,0 +1,11 @@
+{
+  "Comment": "OU Provisioning State Machine",
+  "StartAt": "ProvisionOU",
+  "States": {
+    "ProvisionOU": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:123456789012:function:ou_provision",
+      "End": true
+    }
+  }
+}
